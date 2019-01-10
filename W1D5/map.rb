@@ -1,20 +1,20 @@
   class Map
     def initialize
-      # create ivar to store stack here!
+        @map = Array.new(Array.new())
     end
 
     def set(key,value)
-      # adds an element to the stack
+        @map << [key,value]
     end
 
     def get(key)
-      # removes one element from the stack
+        @map.select{ |ele| ele[key] == key}
     end
 
     def delete(key)
-      # returns, but doesn't remove, the top element in the stack
+        @map.delete(@map.assoc(key))
     end
     def show
-
+        @map.to_s
     end 
   end
