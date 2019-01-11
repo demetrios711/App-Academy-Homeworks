@@ -4,11 +4,11 @@
     end
 
     def enqueue(el)
-        @queue.shift(el)
+        @queue.unshift(el)
     end
 
     def dequeue
-        @queue.unshift
+        @queue.pop
     end
 
     def peek

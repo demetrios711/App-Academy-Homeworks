@@ -1,22 +1,28 @@
   class Map
     def initialize
-        @map = Array.new(1){Array.new(2)}
+      @map = []
     end
 
     def set(key,value)
-        self << [key,value]
+      index = @map.index { |pair| pair[0] == key }
+      if index
+        @map[index][1] = value
+      else
+        @map.push([key,value])
+      end
+      value
     end
 
     def get(key)
-        self.select{ |ele| ele[key] == key}
+      @map.select{ |ele| ele[key] == key}
     end
 
     def delete(key)
-        self.delete(@map.assoc(key))
+      @map.delete(@map.assoc(key))
     end
     def show
-        self.to_s
-    end 
+      String.new(@map.to_s)
+    end
   end
 
   x = Map.new
