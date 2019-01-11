@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="style.css" type="text/css">
+<script type="text/javascript" src="scripts.js"></script>
+
+
+    <head>
+        <title>Demetri Sakellaropoulos Recipe</title>
+        <meta name="description" content="How to make Gyro Sandwiches">
+        <meta name="keywords" content="Greek Food, Pita Bread">
+        <meta name="author" content="Demetri Sakellaropoulos">
+    </head>
+
+    <header><img src="https://assets.aaonline.io/fullstack/html-css/micro-projects/appacademylogo.png"/>
+        <nav>
+                <ul>
+                    <li><a href="#description">Description</a></li>
+                    <li><a href="#ingredients">Ingredients</a></li>
+                    <li><a href="#directions">Directions</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <body>
+
+        <h1>Gyro</h1>
+
+                <aside>
+                    <a id="ingredients"></a>
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>Lamb, Beef or Pork in Rotisserie Form</li>
+                        <li>Potatoes</li>
+                        <li>Pita Bread</li>
+                        <li>Tzatziki</li>
+                        <li>Tomato</li>
+                        <li>Onion</li>
+                    </ul>
+                </aside>
+
+
+        <section>
+        <a id="description"></a>
+        <h2>Description</h2>
+        <p>Meat in a piece of pita bread with french fries</p>
+        
+        <figure style="width:800; height:600;">
+            <img title="Food" alt="A Picture of a Gyro" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Pita_giros.JPG/1280px-Pita_giros.JPG">
+            <figcaption><a href="https://en.wikipedia.org/wiki/Gyro_(food)">See Here</a></figcaption>
+        </figure>
+
+        <a id="directions"></a>
+        <h2>Directions</h2>
+        <ol>
+            <li>Cook meat on Rotisserie, slice into thin slices.</li>
+            <li>Fry french fries</li>
+            <li>Place all ingredients into pita bread</li>
+        </ol>
+
+        </section>
+
+        <section id="reviews">
+            <form id="review-form">
+                <label for="name">Name: </label>
+                <input type="text" name="name_" id="name"><br><br>
+
+                <label>Rating</label>
+                <label for="1rating">1</label>
+                <input type="radio" name="rating" id="1rating" value="1"><br>
+                <label for="2rating">2</label>
+                <input type="radio" name="rating" id="2rating" value="2"><br>
+                <label for="3rating">3</label>
+                <input type="radio" name="rating" id="3rating" value="3"><br>
+                <label for="4rating">4</label>
+                <input type="radio" name="rating" id="4rating" value="4"><br>
+                <label for="5rating">5</label>
+                <input type="radio" name="rating" id="5rating" value="5"><br><br>
+
+
+                <select>
+                    <option value="selectcooking" disabled>Select Cooking Expertise</option>
+                    <option value="sometimescook">Sometimes Cook</option>
+                    <option value="cookeveryday">Cook Everyday</option>
+                    <option value="cookingishobby">Cooking is a Hobby</option>
+                    <option value="profchef">Professional Chef</option>
+                </select>
+
+                <br><br>
+
+                <label>Review
+                    <br>
+                    <textarea name="review" cols="30" rows="10"></textarea>
+                </label>
+                
+                <br>
+                <input type="submit" value="Submit">
+            </form> 
+        </section>
+
+    </body>
+    <footer>
+        <br>
+
+        <p>Source of Recipe: Myself</p>
+        <p>Recipe originated in Greece.</p>
+    </footer>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-12345678-9', 'auto');
+    ga('send', 'pageview');
+</script>
+
+</html>
